@@ -10,13 +10,20 @@
 // Output: 2
 // Explanation: In this example, the minimum value is 1 and the maximum value is 4. Therefore, either 2 or 3 can be valid answers.
 
-var findNonMinOrMax = function(nums) {
-    if(nums.length<=2){
-        return -1
-    }
-    else{
-        const nums1 = nums.sort((a,b)=>a-b)
-        return nums1[1]
-    }
+// var findNonMinOrMax = function(nums) {
+//     if(nums.length<=2){
+//         return -1
+//     }
+//     else{
+//         const nums1 = nums.sort((a,b)=>a-b)
+//         return nums1[1]
+//     }
+// };
+// console.log(findNonMinOrMax([3,2,1,4]))
+var removeDuplicates = function(nums) {
+    
+    const set = new Set(nums)
+    const unique = [...set]
+    return unique
 };
-console.log(findNonMinOrMax([3,2,1,4]))
+console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
