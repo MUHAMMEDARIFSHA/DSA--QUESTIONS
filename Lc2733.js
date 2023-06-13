@@ -20,10 +20,3 @@
 //     }
 // };
 // console.log(findNonMinOrMax([3,2,1,4]))
-var removeDuplicates = function(nums) {
-    
-    const set = new Set(nums)
-    const unique = [...set]
-    return unique
-};
-console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
