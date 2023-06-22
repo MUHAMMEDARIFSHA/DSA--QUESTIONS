@@ -21,24 +21,7 @@
 // Input: height = [1,1]
 // Output: 1
 
-// var maxArea = function(height) {
-//     let largest =0
-//     let volume =0
-//     for(let i=0;i<height.length;i++){
-//        for(j=0;j<height.length;j++){
-//        if(height[j]<height[i]){
-//         volume = height[j]*(j-i)
-//        }else{
-//         volume = height[i]*(j-i)
-//        }
-//        if(volume>largest){
-//         largest = volume
-//        }
-//     }
 
-// }
-// return largest
-// };
 var maxArea = function(height) {
     let largest = 0;
     let left = 0;
