@@ -77,3 +77,6 @@ function findDuplicate_2(nums) {
     }
   }
 console.log(findDuplicate([1,3,12,4,2,2,10222,43,2342]))
+let nums = [1,3,12,4,2,2,10222,43,2342]
+let arr = Array(nums.length).fill(0);
+console.log("arr",arr)
