@@ -26,6 +26,8 @@
  * @param {number} k
  * @return {void} Do not return anything, modify nums in-place instead.
  */
+
+// proper method which will work for all the leetcode scenarios
 var rotate_1 = function(nums, k) {
  let rotatedArray = []
  for(let i=0;i<nums.length;i++){
@@ -38,9 +40,10 @@ var rotate_1 = function(nums, k) {
 return nums
 };
 
+// if k is always less than length of the array we can use this method
 var rotate = function(nums, k) {
-    for(let i = 0;i<k;i++){
-    }
+   let slicedArray = nums.splice(nums.length-k,k)
+    return [...slicedArray,...nums]
 }
 
 console.log(rotate(nums = [1,2,3,4,5,6,7], k = 3))
