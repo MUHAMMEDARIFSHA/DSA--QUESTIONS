@@ -9,8 +9,7 @@ function rangeOfNumber(startRange, endRange){
         let numbers = rangeOfNumber(startRange+1,endRange)
         numbers.unshift(startRange)
         return numbers
-    }
-    
+    }    
 }
 
 console.log(rangeOfNumber(1,4))
