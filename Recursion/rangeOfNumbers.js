@@ -10,6 +10,7 @@ function rangeOfNumber(startRange, endRange){
         numbers.unshift(startRange)
         return numbers
     }
+    
 }
 
 console.log(rangeOfNumber(1,4))
